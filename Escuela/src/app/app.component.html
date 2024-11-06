@@ -1,0 +1,21 @@
+<div class="container">
+  <header>
+    <h1>Sistema de Gestión de Escuela</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a routerLink="/solicitud-aula" routerLinkActive="active">Solicitud de Aula</a></li>
+      <li><a routerLink="/solicitud-medios" routerLinkActive="active">Solicitud de Medios</a></li>
+      <li><a routerLink="/gestion-calificaciones" routerLinkActive="active">Gestión de Calificaciones</a></li>
+      <li><a routerLink="/info-estudiantes" routerLinkActive="active">Información de Estudiantes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Aquí se mostrará el contenido de las rutas -->
+  <router-outlet></router-outlet>
+
+  <footer>
+    <p>&copy; 2024 Sistema de Gestión Escolar. Todos los derechos reservados.</p>
+  </footer>
+</div>

@@ -1,0 +1,38 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  nav {
+    margin: 20px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  

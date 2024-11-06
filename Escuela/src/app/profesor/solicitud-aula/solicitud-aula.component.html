@@ -1,0 +1,10 @@
+<div>
+    <h3>Solicitar Aula</h3>
+    <ul>
+      <li *ngFor="let aula of aulasDisponibles">
+        {{ aula.ubicacion }} - Capacidad: {{ aula.capacidad }}
+        <button (click)="solicitarAula(aula.id)">Solicitar</button>
+      </li>
+    </ul>
+  </div>
+  
