@@ -1,21 +1,68 @@
-<div class="container">
-  <header>
-    <h1>Sistema de Gestión de Escuela</h1>
-  </header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión Escolar</title>
+    <link rel="stylesheet" href="app.component.css"> <!-- Enlaza tu archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Gestión Escolar</h1>
+        </header>
 
-  <nav>
-    <ul>
-      <li><a routerLink="/solicitud-aula" routerLinkActive="active">Solicitud de Aula</a></li>
-      <li><a routerLink="/solicitud-medios" routerLinkActive="active">Solicitud de Medios</a></li>
-      <li><a routerLink="/gestion-calificaciones" routerLinkActive="active">Gestión de Calificaciones</a></li>
-      <li><a routerLink="/info-estudiantes" routerLinkActive="active">Información de Estudiantes</a></li>
-    </ul>
-  </nav>
+        <nav>
+            <ul>
+                <li><a href="#solicitar-aula">Solicitar Aula</a></li>
+                <li><a href="#solicitar-medios">Solicitar Medios</a></li>
+                <li><a href="#modificar-nota">Modificar Nota</a></li>
+                <li><a href="#info-estudiantes">Información de Estudiantes</a></li>
+                <li><a href="#admin">Administración</a></li>
+            </ul>
+        </nav>
 
-  <!-- Aquí se mostrará el contenido de las rutas -->
-  <router-outlet></router-outlet>
+        <main>
+            <section id="solicitar-aula">
+                <h2>Solicitud de Aula</h2>
+                <form>
+                    <label for="nombre-profesor">Nombre del Profesor:</label>
+                    <input type="text" id="nombre-profesor" required>
 
-  <footer>
-    <p>&copy; 2024 Sistema de Gestión Escolar. Todos los derechos reservados.</p>
-  </footer>
-</div>
+                    <label for="asignatura-aula">Asignatura:</label>
+                    <input type="text" id="asignatura-aula" required>
+
+                    <label for="fecha-aula">Fecha:</label>
+                    <input type="date" id="fecha-aula" required>
+
+                    <button type="submit">Enviar Solicitud</button>
+                </form>
+            </section>
+
+            <section id="solicitar-medios">
+                <h2>Solicitud de Medios</h2>
+                <!-- Aquí puedes agregar un formulario similar para solicitar medios -->
+            </section>
+
+            <section id="modificar-nota">
+                <h2>Modificar Nota</h2>
+                <!-- Aquí puedes agregar un formulario para modificar notas -->
+            </section>
+
+            <section id="info-estudiantes">
+                <h2>Información de Estudiantes</h2>
+                <!-- Aquí puedes mostrar la información general de los estudiantes -->
+            </section>
+
+            <section id="admin">
+                <h2>Administración</h2>
+                <!-- Aquí puedes agregar secciones para la administración -->
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Sistema de Gestión Escolar. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
